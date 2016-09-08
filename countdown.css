@@ -1,0 +1,81 @@
+@font-face {
+    font-family: Formata;
+    src: url(Formata-Regular.otf);
+}
+@font-face {
+    font-family: Formata-Medium;
+    src: url(Formata-Medium.otf);
+}
+
+
+.app-container{
+	padding-top: 20px;
+	font-family: Formata !important;
+	text-align: center;
+}
+
+.header{
+  display:                 flex;
+  display:                 -webkit-flex; /* Safari 8 */
+  flex-wrap:               wrap;
+  -webkit-flex-wrap:       wrap;         /* Safari 8 */
+  justify-content:         center;
+  -webkit-justify-content: center;       /* Safari 8 */
+}
+.flip-clock-label{
+	font-family: Formata !important;
+}
+.logo{
+		float:left;
+	display: inline;
+	height:100px;
+
+}
+.title{
+	float:left;
+	font-size: 3em;
+	margin-top: 30px;
+	margin-left: 10px;
+	color:rgb(51,114,176);
+	font-family: Formata-Medium !important;
+}
+
+.flip-clock-wrapper{
+  display:                 flex;
+  display:                 -webkit-flex; /* Safari 8 */
+  flex-wrap:               wrap;
+  -webkit-flex-wrap:       wrap;         /* Safari 8 */
+  justify-content:         center;
+  -webkit-justify-content: center;       /* Safari 8 */
+  zoom: 0.45;
+   -moz-transform: scale(0.45)
+}
+
+.subtitle-container{
+	text-align: center;
+}
+
+.subtitle{
+	max-width: 600px;
+	font-size:2em;
+}
+
+@media(min-width:510px){
+	.flip-clock-wrapper{
+		zoom: 0.6;
+   		-moz-transform: scale(0.6)
+	}
+}
+
+
+@media(min-width:768px){
+	.flip-clock-wrapper{
+		zoom: 0.8;
+   		-moz-transform: scale(0.8)
+	}
+}
+@media(min-width:992px){
+	.flip-clock-wrapper{
+		zoom: 1;
+   		-moz-transform: scale(1)
+	}}

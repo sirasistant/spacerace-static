@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html ng-app="Countdown" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+    <meta name="description" content="Countdown">
+    <meta name="author" content="Sir Assistant">
+    <link rel="icon" href="./favicon.ico">
+
+    <title>IEEE Space Race</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+
+    <link href="./bower_components/FlipClock/compiled/flipclock.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="countdown.css" rel="stylesheet">
+
+  </head>
+
+  <body ng-controller="CountdownController">
+
+    <div class="container">
+      <div class="app-container" ng-app="angular-flipclock">
+          <div class="header">
+      <img class="logo" src="./spacerace_small.png">
+      <h1 class="title">IEEE Space Race</h1>
+      <div class="clearfix"></div>
+      </div>
+      <br/>
+      <div class="subtitle-container">
+        <span class="subtitle">Time left for Space Race start:</span>
+      </div>
+      <br/>
+      <flip-clock clockface="LongDailyCounter" init="startCountdown"></flip-clock>
+
+      <div class="clearfix"></div>
+  
+      </div>
+
+    </div> <!-- /container -->
+
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./bower_components/angular/angular.min.js"></script>
+    <script src="./bower_components/FlipClock/compiled/flipclock.min.js"></script>
+
+    <!-- Custom JS -->
+
+    <script src="./countdown.js"></script>
+  </body>
+</html>
