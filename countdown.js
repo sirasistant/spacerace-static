@@ -2,15 +2,15 @@ Countdown = angular.module('Countdown', []);
 
 
 
-Countdown.controller('CountdownController',['$scope',function($scope){
+Countdown.controller('CountdownController',['$scope','$timeout',function($scope,$timeout){
 	$scope.startCountdown=function(clock){
-		clock.setCountdown(true);
-		var now = new Date();
-		var startDate = new Date(2017, 02, 08, 0, 0, 0, 0);
-		var dif = now.getTime() - startDate.getTime();
-		var secs = Math.abs(dif / 1000);
+			clock.setCountdown(true);
+			var now = new Date();
+			var startDate = new Date(2017, 0, 08, 0, 0, 0, 0);
+			var dif = now.getTime() - startDate.getTime();
+			var secs = Math.abs(dif / 1000);
 
-		clock.setTime(secs);
+			clock.setTime(secs);
 	}
 }]);
 
@@ -153,9 +153,9 @@ Countdown.run(function(){
 			}
 
 			$(this.createDivider('Minutes')).insertBefore(this.lists[this.lists.length - 4 + offset].$el);
-			$(this.createDivider('Hours')).insertBefore(this.lists[this.lists.length - 6 + offset].$el);
-			$(this.createDivider('Days')).insertBefore(this.lists[this.lists.length - 8 + offset].$el);
-			$(this.createDivider('Weeks', true)).insertBefore(this.lists[0].$el);
+			$(this.createDivider('Hours','hours')).insertBefore(this.lists[this.lists.length - 6 + offset].$el);
+			$(this.createDivider('Days','days')).insertBefore(this.lists[this.lists.length - 8 + offset].$el);
+			$(this.createDivider('Weeks','weeks', true)).insertBefore(this.lists[0].$el);
 
 			this.base();
 		},
@@ -176,3 +176,5 @@ Countdown.run(function(){
 
 	});
 });
+
+new scrollReveal();

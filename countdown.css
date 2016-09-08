@@ -24,7 +24,32 @@
 }
 .flip-clock-label{
 	font-family: Formata !important;
+	font-size: 24px !important;
+    top: 4.5em !important;
 }
+
+.flip-clock-divider.weeks .flip-clock-label {
+  right: -105px !important; 
+}
+
+.flip-clock-divider.days .flip-clock-label {
+  right: -96px !important; 
+}
+
+
+.flip-clock-divider.hours .flip-clock-label {
+  right: -104px !important; 
+}
+
+.flip-clock-divider.minutes .flip-clock-label {
+  right: -110px !important; 
+}
+
+.flip-clock-divider.seconds .flip-clock-label {
+  right: -113px !important; 
+}
+
+
 .logo{
 		float:left;
 	display: inline;
@@ -39,16 +64,13 @@
 	color:rgb(51,114,176);
 	font-family: Formata-Medium !important;
 }
-
 .flip-clock-wrapper{
-  display:                 flex;
-  display:                 -webkit-flex; /* Safari 8 */
-  flex-wrap:               wrap;
-  -webkit-flex-wrap:       wrap;         /* Safari 8 */
-  justify-content:         center;
-  -webkit-justify-content: center;       /* Safari 8 */
-  zoom: 0.45;
-   -moz-transform: scale(0.45)
+	width:800px;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+	zoom: 0.45;
+   	-moz-transform: scale(0.45)
 }
 
 .subtitle-container{

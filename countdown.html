@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
  
-    <meta name="description" content="Countdown">
+    <meta name="description" content="Countdown to the IEEE Space Race">
     <meta name="author" content="Sir Assistant">
     <link rel="icon" href="./favicon.ico">
 
@@ -24,17 +24,18 @@
 
     <div class="container">
       <div class="app-container" ng-app="angular-flipclock">
-          <div class="header">
+      <div data-sr="wait 0.5s and enter top" class="header">
       <img class="logo" src="./spacerace_small.png">
       <h1 class="title">IEEE Space Race</h1>
       <div class="clearfix"></div>
       </div>
       <br/>
       <div class="subtitle-container">
-        <span class="subtitle">Time left for Space Race start:</span>
+        <span class="subtitle">Starts in...</span>
       </div>
       <br/>
-      <flip-clock clockface="LongDailyCounter" init="startCountdown"></flip-clock>
+      
+        <flip-clock clockface="LongDailyCounter" init="startCountdown"></flip-clock>
 
       <div class="clearfix"></div>
   
@@ -48,7 +49,7 @@
     <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./bower_components/angular/angular.min.js"></script>
     <script src="./bower_components/FlipClock/compiled/flipclock.min.js"></script>
-
+    <script src="./bower_components/scrollReveal.js/dist/scrollReveal.min.js"></script>
     <!-- Custom JS -->
 
     <script src="./countdown.js"></script>
